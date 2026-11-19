@@ -9,6 +9,16 @@ npm install
 npm run dev
 ```
 
+### Live Serverで開く場合
+
+Live ServerはTypeScript/JSXを変換できないため、先にビルドしてください。
+
+```bash
+npm run build
+```
+
+`.vscode/settings.json`で公開ルートを`dist`に設定しています。ビルド後にプロジェクトの`index.html`をLive Serverで開いてください。
+
 ## 未実装一覧（TODO(Phase2)）
 - タイルごとのIndexedDB保存、完全なセッション復元、タイル遅延生成
 - 投げ縄、テキストボックス、付箋、ボディマップ、荷物置き場、音声録音
